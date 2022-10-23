@@ -1,7 +1,7 @@
 {
-  "name": "v14bosaltyapi",
-  "version": "1.0.1",
-  "description": "V14 boş altyapı",
+  "name": "soundspeaker",
+  "version": "0.0.1",
+  "description": "A open source Discord TTS bot!",
   "main": "main.js",
   "scripts": {
     "start": "node main.js",
@@ -11,9 +11,18 @@
   "dependencies": {
     "@discordjs/rest": "^1.1.0",
     "discord-api-types": "^0.37.10",
-    "discord.js": "^14.4.0"
+    "discord.js": "^14.6.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SoundSpeaker/Bot.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SoundSpeaker/Bot/issues"
+  },
+  "homepage": "https://github.com/SoundSpeaker/Bot#readme"
 }
