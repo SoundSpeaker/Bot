@@ -1,5 +1,6 @@
 const { bot } = require('./../config.js');
 const { Client } = require("discord.js");
+const { JsonDatabase } = require("wio.db");
 
 module.exports = class extends Client {
 
@@ -14,6 +15,8 @@ module.exports = class extends Client {
       }
     });
     global.client = this
+    global.db = new JsonDatabase({ databasePath: "./database/database.json" });
+      
   
     require("../handlers/command-loader")
     require("../handlers/command-handler")(this)

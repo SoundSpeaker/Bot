@@ -1,6 +1,6 @@
 const fs = require('fs')
 const path = require('path')
-const { REST } = require('@discordjs/rest')
+const { REST } = require('discord.js')
 const { Routes } = require('discord-api-types/v10')
 const { bot } = require('../config')
 

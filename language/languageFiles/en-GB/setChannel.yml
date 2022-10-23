@@ -1,0 +1,5 @@
+successTitle: "Success"
+errorTitle: "Error"
+errorNoChannelFound: "I couldnt find the Text channel."
+successDescription: "**Successfully Text channel set to** {{channel}}."
+errorNotATextChannel: "{{channel}} **is not a Text channel**."

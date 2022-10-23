@@ -1,0 +1,5 @@
+successTitle: "Success"
+errorTitle: "Error"
+errorNoChannelFound: "I couldnt find the voice channel."
+successDescription: "**Successfully joined to** {{channel}}."
+errorNotAVoiceChannel: "{{channel}} **is not a voice channel**."

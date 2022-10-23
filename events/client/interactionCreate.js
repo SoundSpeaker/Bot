@@ -1,4 +1,4 @@
-const { ApplicationCommandType } = require('discord.js')
+const { loadLanguages, getTranslations } = require('../../language/languageCore')
 
 module.exports = {
   name: 'interactionCreate',
@@ -7,10 +7,11 @@ module.exports = {
     if (!interaction.isChatInputCommand()) return
 
     const command = interaction.client.commands.get(interaction.commandName)
+    const translate = getTranslations(interaction.locale)
     if (!command) return
 
     try {
-      command.execute(interaction)
+      command.execute(interaction, translate)
     } catch (error) {
       console.error(error)
       return interaction.reply({ content: 'There was an error while executing this command!', ephemeral: true })
